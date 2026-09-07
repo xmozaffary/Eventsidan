@@ -1,0 +1,23 @@
+.nav {
+  display: flex;
+  gap: 15px;
+  min-height: 10vh;
+
+  a {
+    color: rgb(0, 3, 5);
+    text-decoration: none;
+  }
+}
+
+.highlights {
+  display: flex;
+  gap: 10px;
+}
+
+.highlights article {
+  padding: 5px;
+  border: solid black;
+  background-color: rgb(204, 201, 201);
+  color: black;
+  font-weight: 700;
+}
