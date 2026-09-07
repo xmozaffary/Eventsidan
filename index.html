@@ -7,15 +7,19 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <header class="header">
+    <header>
       <nav class="nav">
-        <a href="#hero" class="hero-btn">Hero</a>
-        <a href="#schema" class="hero-btn">Schema</a>
-        <a href="#highlights" class="hero-btn">Highlights</a>
+        <h1>Musikfestival</h1>
+        <div>
+          <a href="#hero" class="hero-btn">Hero</a>
+          <a href="#schema" class="hero-btn">Schema</a>
+          <a href="#highlights" class="hero-btn">Highlights</a>
+          <a href="#footer" class="hero-btn">footer</a>
+        </div>
       </nav>
     </header>
     <main>
-      <section class="hero">
+      <section id="hero" class="hero">
         <img src="https://placehold.co/800x400" alt="bild på festival" />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odio,
@@ -24,11 +28,12 @@
           temporibus ipsa ex autem.
         </p>
       </section>
-      <section class="schema">schema</section>
-      <section>
+      <section id="schema" class="schema">schema</section>
+      <section class="highlights-container">
         <h1>highlights</h1>
         <div class="highlights">
           <article>
+            <img src="https://placehold.co/600x400" alt="kod rock" />
             <h2>kod Rock</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -37,6 +42,7 @@
             </p>
           </article>
           <article>
+            <img src="https://placehold.co/600x400" alt="kod css" />
             <h2>kod css</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -45,6 +51,7 @@
             </p>
           </article>
           <article>
+            <img src="https://placehold.co/600x400" alt="kod js" />
             <h2>kod js</h2>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -55,6 +62,6 @@
         </div>
       </section>
     </main>
-    <footer class="footer"></footer>
+    <footer id="footer" class="footer">footer</footer>
   </body>
 </html>
