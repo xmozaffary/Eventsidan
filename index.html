@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,27 +9,27 @@
   <body>
     <header>
       <nav class="nav">
-        <h1>Musikfestival</h1>
-        <div>
-          <a href="#hero" class="hero-btn">Hero</a>
-          <a href="#schema" class="hero-btn">Schema</a>
-          <a href="#highlights" class="hero-btn">Highlights</a>
-          <a href="#footer" class="hero-btn">footer</a>
-        </div>
+        <a href="#hero" class="logo">Musikfestival</a>
+        <ul class="nav-links">
+          <li><a href="#hero">Hem</a></li>
+          <li><a href="#schema">Schema</a></li>
+          <li><a href="#highlights">Highlights</a></li>
+          <li><a href="#footer">Kontakt</a></li>
+        </ul>
       </nav>
     </header>
+
     <main>
       <section id="hero" class="hero">
         <img src="https://placehold.co/800x400" alt="bild på festival" />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odio,
-          quisquam dignissimos voluptatum vel asperiores. Praesentium nihil nam
-          beatae voluptatem illum labore nemo et recusandae. Voluptatibus
-          temporibus ipsa ex autem.
-        </p>
+        <p>2026-03-25 till 2026-03-29</p>
+        <br />
+        <p>Festivalängen, Eventsvägen 6</p>
+        <br />
+        <p>kort beskrivning(?)</p>
       </section>
-      <section id="schema" class="schema">schema</section>
-      <section class="highlights-container">
+
+      <section id="highlights" class="highlights-container">
         <h1>highlights</h1>
         <div class="highlights">
           <article>
@@ -41,6 +41,7 @@
               Tenetur,
             </p>
           </article>
+
           <article>
             <img src="https://placehold.co/600x400" alt="kod css" />
             <h2>kod css</h2>
@@ -50,6 +51,7 @@
               tempore facere,
             </p>
           </article>
+
           <article>
             <img src="https://placehold.co/600x400" alt="kod js" />
             <h2>kod js</h2>
@@ -60,8 +62,42 @@
             </p>
           </article>
         </div>
+        <section></section>
+      </section>
+
+      <section id="schema">
+        <article class="schema">
+          <div>
+            <h3>Datum</h3>
+            <p>2026-03-25</p>
+            <p>2026-03-27</p>
+          </div>
+
+          <div>
+            <h3>Scener</h3>
+            <p>Scen A Grön</p>
+            <p>Scen B Röd</p>
+            <p>Scen C Svart</p>
+          </div>
+
+          <div>
+            <h3>Band</h3>
+            <p>Kod Rock 25 mars A</p>
+            <br />
+            <p>Kod CSS 26 mars B</p>
+            <br />
+            <p>Kod JS 27 mars C</p>
+          </div>
+
+          <div>
+            <h3>Matkiosk tider</h3>
+            <p>FM: 09:00-12:00</p>
+            <p>EM: 14:00-20:00</p>
+          </div>
+        </article>
       </section>
     </main>
+
     <footer id="footer" class="footer">
       <div>
         <h3>Konkta oss</h3>
@@ -71,7 +107,7 @@
       <div>
         <p>07-1234567</p>
         <p>Rock@gmail.com</p>
-        <p>Evensvägen 6</p>
+        <p>Eventsvägen 6</p>
       </div>
     </footer>
   </body>
