@@ -4,36 +4,37 @@
   box-sizing: border-box;
 }
 
-header {
-  background-color: #4b4a4a;
-  padding: 20px;
-}
-
 .nav {
   display: flex;
+  min-height: 10vh;
+  padding: 1rem;
   justify-content: space-between;
   align-items: center;
-}
 
-.logo {
-  color: white;
-  font-size: 24px;
-  text-decoration: none;
-}
+  div {
+    display: flex;
+    gap: 1rem;
+  }
 
-.nav-links {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-}
+  a {
+    color: rgb(0, 3, 5);
+    text-decoration: none;
+  }
 
-.nav-links a {
-  color: white;
-  text-decoration: none;
-}
+  .hero-btn {
+    display: block;
+    font-weight: 700;
+    background-color: rgb(117, 221, 48);
+    border: solid gray;
+    border-radius: 15px;
+    padding: 10px;
+    width: 110px;
+    text-align: center;
 
-.nav-links a:hover {
-  color: lightgrey;
+    &:hover {
+      background-color: rgb(155, 24, 24);
+    }
+  }
 }
 
 .hero {
@@ -44,8 +45,9 @@ header {
 
   display: flex;
   justify-content: center;
-  align-items: center;
+  text-align: center;
   flex-direction: column;
+
 }
 
 .hero img {
@@ -67,6 +69,11 @@ header {
   gap: 1rem;
   margin: 20px;
   flex-wrap: wrap;
+}
+
+#highlights h1 {
+  text-align: center;
+  padding: 20px;
 }
 
 .highlights article {
@@ -109,14 +116,14 @@ header {
 
 .schema div {
   padding: 60px;
-  border: 2px solid black;
   text-align: center;
+  border: 2px solid black;
 }
 
 .table {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr 2fr;
-
+  
   width: 80%;
   margin: 40px auto;
 
