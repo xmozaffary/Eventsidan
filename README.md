@@ -19,8 +19,9 @@ Exempel från vår kod: är bla. <main> och de följande <section> med dens egna
 Flexbox är endimensionell layout system som gör det enklare att anpassa
 utseendet och samtidigt få en responsiv layout med hjälp av flexbox egenskaper
 Flexbox är bra om man vill ha object på en rad, som standard ligger det på rad
-och man kan ändra riktning till columner med hjälp av fle-direction.
+och man kan ändra riktning till columner med hjälp av flex-direction.
 
+Ett bra exempel är .nav som gör att <li> elementen inte staplas vertikalt (vilket är standard annars) och med display: flex lägger vi dom på rad med gap: 1rem som mellanrum
 
 
 ## CSS Grid
@@ -29,7 +30,15 @@ Grid är tvådimensionell layout, det vill säga du kan ha både rader och kolum
 enkelt välja hur många columner du ska använda och hur stor bråkdel av hemsidan 
 de ska ta genom att använda grid-template-columnns tex 1fr 2fr 2fr. 
 då får man 1 mindre del och 2 större del, (fr står för fraction)
-Motivering från vårt egna kod:
+
+Motivering från vår egna kod där vi har använt CSS Grid är
+på vårt <article class="Schema"> där vi har använt Grid för att skapa 
+rutnät som är ett schema för de olika artister, vilka scener de spelar på
+och öppettider i matkiosken. Vi använde Grid-template-columns: 1fr 1fr för att skapa
+två columner och sedan i media queries har vi gjort att det blir till en column
+med grid-template-columns: 1fr;
+Detta gjorde att informationen är tydlig och i struktur så att det blir lätt att läsa.
+samt anpassar layouten sig efter skärmbredd.
 
 
 
