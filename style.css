@@ -88,9 +88,12 @@ header {
   z-index: 1;
 }
 
+.hero h1,
 .hero p {
+  position: relative;
   z-index: 2;
 }
+
 
 /*Highlights*/
 
@@ -162,6 +165,12 @@ header {
   .nav-links {
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .hero {
+    height: auto;
+    min-height: 40vh;
+    padding: 2rem 1rem;
   }
 
   .highlights {
