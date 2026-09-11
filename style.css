@@ -9,7 +9,7 @@
 
 header {
   background-color: #a5a5a5;
-  border-bottom: 2px solid #b91c1c;
+  border-bottom: 2px solid #000000;
   box-shadow: 0 2px 6px rgb(0 0 0 / 15%);
 }
 
@@ -124,12 +124,12 @@ header {
 /*FOOTER*/
 
 .footer {
-  height: 15vh;
+  min-height: 15vh;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 2rem;
+  padding: 2rem 4rem;
   background-color: rgb(228, 230, 227);
   color: black;
 }
@@ -151,18 +151,28 @@ header {
 
 /*Media*/
 
-@media (max-width: 440px) {
-  .schema {
-    grid-template-columns: 1fr;
+@media (max-width: 600px) {
+  .nav,
+  .footer {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
   }
-}
 
-@media (max-width: 440px) {
-  .schema {
-    grid-template-columns: 1fr;
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .highlights {
     flex-direction: column;
+  }
+
+  .schema {
+    grid-template-columns: 1fr;
+  }
+
+  .schema div {
+    padding: 20px;
   }
 }
