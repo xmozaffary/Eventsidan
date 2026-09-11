@@ -21,6 +21,13 @@
     text-decoration: none;
   }
 
+  .nav-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  align-items: center;
+}
+
   .hero-btn {
     display: block;
     font-weight: 700;
